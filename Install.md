@@ -10,6 +10,16 @@ If you do have multiple version of Java, make sure to select Java 8 (1.8) before
 * On Windows: https://gist.github.com/rwunsch/d157d5fe09e9f7cdc858cec58c8462d6
 * On Mac OS: https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
 
+### Local Installation - Docker
+
+* Bulid image locally
+* Run notebook inside container
+
+```
+docker build . -t local:chisel-bootcamp
+docker run --rm -e JUPYTER_ENABLE_LAB=yes -p 8888:8888 local:chisel-bootcamp
+```
+
 ### Local Installation - Mac/Linux
 
 This bootcamp uses Jupyter notebooks.
